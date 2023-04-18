@@ -8,9 +8,14 @@ const App = () => {
     { title: "Beer", amount: 31.99, date: new Date(2023, 2, 28) },
   ];
 
+  const newExpenseHandler = expense =>{
+    console.log("In App.js");
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onNewExpense={newExpenseHandler} />
       <Expenses data = {expenses} />
     </div>
   );
