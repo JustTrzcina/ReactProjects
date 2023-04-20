@@ -13,7 +13,7 @@ const Expenses = (props) => {
   };
 
   const filteredExpenses = props.data.filter((expense) => {
-    return expense.date.getFullYear().toString() == filter;
+    return expense.date.getFullYear().toString() === filter;
   });
 
   return (
