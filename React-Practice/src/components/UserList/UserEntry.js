@@ -1,9 +1,9 @@
 import React from "react";
 
 const UserEntry = (props) => {
-    return <p>
-        {`${props.username} (${props.age})`}
-    </p>
+    return <li>
+        {`${props.username} (${props.age}) years old`}
+    </li>
 }
 
 export default UserEntry
